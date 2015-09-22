@@ -1,0 +1,19 @@
+{
+  "name": "ractive-range-slider",
+  "version": "0.0.1",
+  "description": "Ractive component for a range slider composed of two native <input type=range> elements.",
+  "main": "ractive-range-slider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmpolis/ractive-range-slider"
+  },
+  "author": "Chris Polis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmpolis/ractive-range-slider/issues"
+  },
+  "homepage": "https://github.com/cmpolis/ractive-range-slider"
+}
