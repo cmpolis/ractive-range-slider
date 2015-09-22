@@ -7,6 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/browserify/bin/cmd.js range-slider.js -t [stringify --extensions .css --extensions .hbs] -o range-slider-standalone.js -s RangeSlider"
   },
+  "browserify": {
+    "transform": [
+      ["stringify", ["hbs", "css"]]
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/cmpolis/ractive-range-slider"
@@ -18,10 +23,10 @@
   },
   "homepage": "https://github.com/cmpolis/ractive-range-slider",
   "dependencies": {
-    "ractive": "^0.7.3"
+    "ractive": "^0.7.3",
+    "stringify": "^3.1.0"
   },
   "devDependencies": {
-    "browserify": "^11.1.0",
-    "stringify": "^3.1.0"
+    "browserify": "^11.1.0"
   }
 }
