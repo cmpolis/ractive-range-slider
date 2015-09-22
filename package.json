@@ -2,9 +2,10 @@
   "name": "ractive-range-slider",
   "version": "0.0.1",
   "description": "Ractive component for a range slider composed of two native <input type=range> elements.",
-  "main": "ractive-range-slider.js",
+  "main": "range-slider.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/browserify/bin/cmd.js range-slider.js -t [stringify --extensions .css --extensions .hbs] -o range-slider-standalone.js -s RangeSlider"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/cmpolis/ractive-range-slider/issues"
   },
-  "homepage": "https://github.com/cmpolis/ractive-range-slider"
+  "homepage": "https://github.com/cmpolis/ractive-range-slider",
+  "dependencies": {
+    "ractive": "^0.7.3"
+  },
+  "devDependencies": {
+    "browserify": "^11.1.0",
+    "stringify": "^3.1.0"
+  }
 }
